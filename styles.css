@@ -1,6 +1,42 @@
-body{
-  padding: 25px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:0;
+	font_family:"Cormorant Garamond" ,system-ui;
 }
-.title {
-	color: #5C6AC4;
+
+body {
+display: grid;
+grid-template-rows: auto 1fr auto;
+min-height: 100vh;
+min-height: 100dvh;
+}
+.header {
+background-color: pink;
+display: flex;
+justify-content: space-between;
+padding: 1rem 2rem;
+}
+.header-title{
+font-size: 1.5rem;
+}
+.languages {
+display: flex;
+gap: .5rem;
+}
+.lang-button {
+background-color: transparent;
+font-size: 1.25rem;
+border: 0;
+cursor: pointer;
+}
+.section {
+padding-inline: 2rem;
+margin-top: 2rem;
+}
+.footer {
+background-color: pink;
+padding: 1rem 2rem;
+margin-top: 2rem;
 }
